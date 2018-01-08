@@ -48,12 +48,12 @@
             // 
             // addVideosButton
             // 
-            this.addVideosButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.addVideosButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.addVideosButton.FlatAppearance.BorderSize = 0;
             this.addVideosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addVideosButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addVideosButton.ForeColor = System.Drawing.Color.White;
-            this.addVideosButton.Location = new System.Drawing.Point(3, 6);
+            this.addVideosButton.Location = new System.Drawing.Point(339, 6);
             this.addVideosButton.Name = "addVideosButton";
             this.addVideosButton.Size = new System.Drawing.Size(102, 32);
             this.addVideosButton.TabIndex = 4;
