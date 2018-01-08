@@ -184,6 +184,7 @@
             this.Controls.Add(this.titlePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DeleteVideoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DeleteVideoForm";
             this.titlePanel.ResumeLayout(false);
             this.titlePanel.PerformLayout();
