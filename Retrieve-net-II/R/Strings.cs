@@ -36,7 +36,7 @@ namespace Retrieve_net_II.R
         public const string aboutTitle = "About Retrieve";
         public const string aboutBody = "Retrieve is a simple application to download YouTube videos and play them.\n\nCreated by Robert Brown (@NSReverse, @ReverseEffect)";
 
-        public const string formatSearchURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q={0}&maxResults=50&type=video&key={1}";
+        public const string formatSearchURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q={0}&maxResults={1}&type=video&key={2}";
 
         public const string searchQueryEmptyAlertTitle = "Error - Query Empty";
         public const string searchQueryEmptyAlertBody = "Please enter a valid search query";

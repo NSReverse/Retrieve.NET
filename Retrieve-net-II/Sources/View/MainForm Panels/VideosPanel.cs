@@ -73,7 +73,9 @@ namespace Retrieve_net_II.Sources.View.Main_Panels
 
         public async Task SendSearchQueryAsync(string query)
         {
-            string address = String.Format(Strings.formatSearchURL, query, Strings.youtubeDeveloperKey);
+            int resultLimit = PreferenceManager.GetSearchResultLimit();
+
+            string address = String.Format(Strings.formatSearchURL, query, resultLimit, Strings.youtubeDeveloperKey);
             string result = await StringDownloader.GetString(address);
 
             if (ApplicationConfig.loggingEnabled)
