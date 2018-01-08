@@ -1,5 +1,4 @@
 ﻿using Retrieve_net_II.R;
-using Retrieve_net_II.R.Configurations;
 using Retrieve_net_II.Sources.Data.Utils;
 using Retrieve_net_II.Sources.Model;
 using System;
