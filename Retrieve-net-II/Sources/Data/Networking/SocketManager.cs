@@ -10,7 +10,6 @@ namespace Retrieve_net_II.Sources.Data.Networking
         static Socket currentSocket;
         private const String localServerAddress = "http://10.0.0.49:3000/";
         private const String publicServerAddress = "http://retrieve.nsreverse.net:3000/";
-        private const bool useLocal = true;
         private static SocketManager manager = null;
         private static Delegate currentDelegate;
 
@@ -24,6 +23,8 @@ namespace Retrieve_net_II.Sources.Data.Networking
         {
             if (manager == null)
             {
+                bool useLocal = PreferenceManager.GetUseDevelopmentServer();
+
                 manager = new SocketManager();
                 currentSocket = IO.Socket((useLocal) ? Strings.localURI : Strings.publicURI);
 
