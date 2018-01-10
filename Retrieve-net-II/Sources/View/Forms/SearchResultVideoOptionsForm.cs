@@ -147,11 +147,8 @@ namespace Retrieve_net_II.Sources.View.Forms
         {
             string libraryLocation = Retrieve.Default.LibraryLocation;
 
-            if (ApplicationConfig.loggingEnabled)
-            {
-                Log.D(Strings.Tags.SEARCH_RESULT_VIDEO_OPTIONS_FORM, "libraryLocation: " + libraryLocation);
-                Log.D(Strings.Tags.SEARCH_RESULT_VIDEO_OPTIONS_FORM, "videoURL: " + videoURL);
-            }
+            Log.D(Strings.Tags.SEARCH_RESULT_VIDEO_OPTIONS_FORM, "libraryLocation: " + libraryLocation);
+            Log.D(Strings.Tags.SEARCH_RESULT_VIDEO_OPTIONS_FORM, "videoURL: " + videoURL);
 
             if (libraryLocation != null && !libraryLocation.Equals(""))
             {

@@ -78,10 +78,7 @@ namespace Retrieve_net_II.Sources.View.Main_Panels
             string address = String.Format(Strings.formatSearchURL, query, resultLimit, Strings.youtubeDeveloperKey);
             string result = await StringDownloader.GetString(address);
 
-            if (ApplicationConfig.loggingEnabled)
-            {
-                Log.D(Strings.Tags.MAIN_FORM, "Query  : " + query);
-            }
+            Log.D(Strings.Tags.MAIN_FORM, "Query  : " + query);
 
             SearchResultForm resultForm = new SearchResultForm();
             resultForm.SetQuery(HttpUtility.UrlDecode(query));

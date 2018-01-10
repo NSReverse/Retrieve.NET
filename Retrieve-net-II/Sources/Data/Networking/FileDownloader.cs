@@ -64,11 +64,8 @@ namespace Retrieve_net_II.Sources.Data.Networking
             string videoDestination = String.Format(Strings.libraryFormatVideos + videoMetadata.youtubeID + ".mp4", libraryFolder);
             string imageDestination = String.Format(Strings.libraryFormatThumbnails + videoMetadata.youtubeID + ".png", libraryFolder);
 
-            if (ApplicationConfig.loggingEnabled)
-            {
-                Log.D(Strings.Tags.FILE_DOWNLOADER, "Video Dest: " + videoDestination);
-                Log.D(Strings.Tags.FILE_DOWNLOADER, "Image Dest: " + imageDestination);
-            }
+            Log.D(Strings.Tags.FILE_DOWNLOADER, "Video Dest: " + videoDestination);
+            Log.D(Strings.Tags.FILE_DOWNLOADER, "Image Dest: " + imageDestination);
 
             WebClient client = new WebClient();
             client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);

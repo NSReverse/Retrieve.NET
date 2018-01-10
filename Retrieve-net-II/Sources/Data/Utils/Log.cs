@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Retrieve_net_II.R;
+using System;
 
 namespace Retrieve_net_II.Sources.Data.Utils
 {
@@ -6,8 +7,11 @@ namespace Retrieve_net_II.Sources.Data.Utils
     {
         public static void D(string tag, string message)
         {
-            string output = String.Format("{0} > {1}", tag, message);
-            System.Diagnostics.Debug.WriteLine(output);
+            if (ApplicationConfig.loggingEnabled)
+            {
+                string output = String.Format("{0} > {1}", tag, message);
+                System.Diagnostics.Debug.WriteLine(output);
+            }
         }
     }
 }

@@ -39,10 +39,7 @@ namespace Retrieve_net_II.Sources.View
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    if (ApplicationConfig.loggingEnabled)
-                    {
-                        Log.D(Strings.Tags.SETTINGS_PANEL, "Path: " + fbd.SelectedPath);
-                    }
+                    Log.D(Strings.Tags.SETTINGS_PANEL, "Path: " + fbd.SelectedPath);
 
                     libraryLocationTextBox.Text = fbd.SelectedPath;
                 }

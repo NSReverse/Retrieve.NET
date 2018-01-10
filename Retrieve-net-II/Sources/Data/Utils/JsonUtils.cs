@@ -33,15 +33,12 @@ namespace Retrieve_net_II.Sources.Data.Utils
                 string youtubeURL = String.Format(Strings.youtubeFormatURL, item.id.videoId);
                 string thumbURL = item.snippet.thumbnails.medium.url;
 
-                if (ApplicationConfig.loggingEnabled)
-                {
-                    Log.D(Strings.Tags.JSON_UTILS, "===============================================================");
-                    Log.D(Strings.Tags.JSON_UTILS, "Video ID      : " + videoId);
-                    Log.D(Strings.Tags.JSON_UTILS, "Title         : " + videoTitle);
-                    Log.D(Strings.Tags.JSON_UTILS, "Author        : " + author);
-                    Log.D(Strings.Tags.JSON_UTILS, "YouTube URL   : " + youtubeURL);
-                    Log.D(Strings.Tags.JSON_UTILS, "Thumbnail URL : " + thumbURL);
-                }
+                Log.D(Strings.Tags.JSON_UTILS, "===============================================================");
+                Log.D(Strings.Tags.JSON_UTILS, "Video ID      : " + videoId);
+                Log.D(Strings.Tags.JSON_UTILS, "Title         : " + videoTitle);
+                Log.D(Strings.Tags.JSON_UTILS, "Author        : " + author);
+                Log.D(Strings.Tags.JSON_UTILS, "YouTube URL   : " + youtubeURL);
+                Log.D(Strings.Tags.JSON_UTILS, "Thumbnail URL : " + thumbURL);
 
                 currentResult.youtubeID = videoId;
                 currentResult.title = videoTitle;
