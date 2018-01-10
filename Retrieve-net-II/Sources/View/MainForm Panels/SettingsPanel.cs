@@ -14,6 +14,11 @@ namespace Retrieve_net_II.Sources.View
             resultNumericUpDown.Minimum = 1;
             resultNumericUpDown.Maximum = 250;
 
+            ReloadPreferences();
+        }
+
+        private void ReloadPreferences()
+        {
             libraryLocationTextBox.Text = PreferenceManager.GetLibraryLocation();
             resultNumericUpDown.Value = PreferenceManager.GetSearchResultLimit();
             developmentCheckBox.Checked = PreferenceManager.GetUseDevelopmentServer();
@@ -29,6 +34,8 @@ namespace Retrieve_net_II.Sources.View
         private void defaultButton_Click(object sender, EventArgs e)
         {
             PreferenceManager.ResetDefaults();
+
+            ReloadPreferences();
         }
 
         private void browseButton_Click(object sender, EventArgs e)
