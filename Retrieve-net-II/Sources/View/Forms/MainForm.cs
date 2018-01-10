@@ -54,6 +54,12 @@ namespace Retrieve_net_II
             ActivatePage(SelectedPanelButton.VIDEOS);
 
             panelManager.SetPanelOriginalSize(mainPanel_Videos);
+
+            // Check if library path is set. If no library set, alert the user.
+            if (PreferenceManager.GetLibraryLocation() == null || PreferenceManager.GetLibraryLocation().Trim().Equals(""))
+            {
+                QuickAlert.ShowInfo("Unable to Locate Library", "Please set a location to store your video files and library information to download videos.");
+            }
         }
 
         private void closePictureBox_Click(object sender, EventArgs e)
