@@ -72,25 +72,26 @@
             // 
             // videosTableLayoutPanel
             // 
+            this.videosTableLayoutPanel.AutoScroll = true;
             this.videosTableLayoutPanel.ColumnCount = 1;
-            this.videosTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 805F));
+            this.videosTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.videosTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.videosTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.videosTableLayoutPanel.Name = "videosTableLayoutPanel";
             this.videosTableLayoutPanel.RowCount = 11;
             this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.videosTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.videosTableLayoutPanel.Size = new System.Drawing.Size(444, 264);
-            this.videosTableLayoutPanel.TabIndex = 1;
+            this.videosTableLayoutPanel.TabIndex = 7;
             // 
             // VideosPanel
             // 
