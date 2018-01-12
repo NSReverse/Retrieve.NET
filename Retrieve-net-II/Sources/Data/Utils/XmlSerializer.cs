@@ -42,7 +42,7 @@ namespace Retrieve_net_II.Sources.Data.Utils
 
             string dataPath = String.Format(Strings.libraryFormatPlaylists, PreferenceManager.GetLibraryLocation());
 
-            FileStream dataFile = File.Create(dataPath + info.name + ".xml");
+            FileStream dataFile = File.Create(dataPath + info.UUID + ".xml");
             serializer.Serialize(dataFile, info);
             dataFile.Close();
         }
