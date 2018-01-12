@@ -49,7 +49,7 @@ namespace Retrieve_net_II.Sources.Data.Utils
 
         public static PlaylistInfo Deserialize(string filename, bool nullPlaylistHack)
         {
-            System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(typeof(VideoInfo));
+            System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(typeof(PlaylistInfo));
 
             string dataPath = String.Format(Strings.libraryFormatPlaylists, PreferenceManager.GetLibraryLocation());
 
