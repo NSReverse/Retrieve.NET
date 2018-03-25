@@ -18,7 +18,7 @@ namespace Retrieve_net_II.R
 
         public const string youtubeDeveloperKey = "AIzaSyAPMYZx4_2SJMZ90MQJk9sEdEZLHZHzwvE";
         public const string publicURI = "http://retrieve.nsreverse.net:3000/";
-        public const string localURI = "http://10.0.0.49:3000/";
+        public const string localURI = "http://10.0.0.171:3000/";
 
         public const string pingResponse = "Pong!";
         public const string pingSuccess = "Connection Success";

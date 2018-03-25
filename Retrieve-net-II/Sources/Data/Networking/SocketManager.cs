@@ -8,8 +8,6 @@ namespace Retrieve_net_II.Sources.Data.Networking
     class SocketManager
     {
         static Socket currentSocket;
-        private const String localServerAddress = "http://10.0.0.49:3000/";
-        private const String publicServerAddress = "http://retrieve.nsreverse.net:3000/";
         private static SocketManager manager = null;
         private static Delegate currentDelegate;
 
