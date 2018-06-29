@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Retrieve_net_II.Sources.Model
 {
-    class PlaylistInfo
+    public class PlaylistInfo
     {
+        public String UUID = Guid.NewGuid().ToString();
         public String name;
         public HashSet<String> idSet = new HashSet<string>();
     }

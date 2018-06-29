@@ -103,6 +103,26 @@ namespace Retrieve_net_II.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_icon_81_document_add_314445 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-81-document-add_314445", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_trash_bin_1370026 {
+            get {
+                object obj = ResourceManager.GetObject("if_trash_bin_1370026", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap large_icon {
             get {
                 object obj = ResourceManager.GetObject("large_icon", resourceCulture);

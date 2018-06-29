@@ -57,26 +57,38 @@
             this.createFolderButton.TabIndex = 4;
             this.createFolderButton.Text = "Create Folder";
             this.createFolderButton.UseVisualStyleBackColor = true;
+            this.createFolderButton.Click += new System.EventHandler(this.createFolderButton_Click);
             // 
             // foldersTableLayoutPanel
             // 
+            this.foldersTableLayoutPanel.AutoScroll = true;
             this.foldersTableLayoutPanel.ColumnCount = 1;
-            this.foldersTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.foldersTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.foldersTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.foldersTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.foldersTableLayoutPanel.Name = "foldersTableLayoutPanel";
-            this.foldersTableLayoutPanel.RowCount = 1;
-            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.foldersTableLayoutPanel.Size = new System.Drawing.Size(468, 265);
-            this.foldersTableLayoutPanel.TabIndex = 4;
+            this.foldersTableLayoutPanel.RowCount = 11;
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.foldersTableLayoutPanel.Size = new System.Drawing.Size(468, 221);
+            this.foldersTableLayoutPanel.TabIndex = 6;
             // 
             // FoldersPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.foldersTableLayoutPanel);
+            this.Controls.Add(this.panel1);
             this.Name = "FoldersPanel";
             this.Size = new System.Drawing.Size(468, 265);
             this.panel1.ResumeLayout(false);

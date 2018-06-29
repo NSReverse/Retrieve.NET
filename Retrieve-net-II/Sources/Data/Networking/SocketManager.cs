@@ -16,7 +16,6 @@ namespace Retrieve_net_II.Sources.Data.Networking
             void DownloadURLReceived(String videoURL);
         }
 
-
         public static SocketManager GetInstance()
         {
             if (manager == null)
@@ -25,6 +24,8 @@ namespace Retrieve_net_II.Sources.Data.Networking
 
                 manager = new SocketManager();
                 currentSocket = IO.Socket((useLocal) ? Strings.localURI : Strings.publicURI);
+
+                Console.WriteLine("Connecting to socket: " + ((useLocal) ? Strings.localURI : Strings.publicURI));
 
                 SetupListeners(currentSocket);
             }

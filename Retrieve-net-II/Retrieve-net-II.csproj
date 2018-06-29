@@ -7,11 +7,12 @@
     <ProjectGuid>{1E6FF6F4-0850-46EF-9817-378967813A85}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Retrieve_net_II</RootNamespace>
-    <AssemblyName>Retrieve-net-II</AssemblyName>
+    <AssemblyName>Retrieve NET</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Robert\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,10 +22,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -36,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +48,21 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>retrieve_icon_Dx4_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6B55334A67222DF4BCFC355E340AB2302C955739</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Retrieve-net-II_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EngineIoClientDotNet, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
@@ -88,6 +106,7 @@
       <DependentUpon>Retrieve.settings</DependentUpon>
     </Compile>
     <Compile Include="R\Strings.cs" />
+    <Compile Include="Sources\Data\Utils\ApplicationUtils.cs" />
     <Compile Include="Sources\Data\Networking\FileDownloader.cs" />
     <Compile Include="Sources\Data\Networking\ImageDownloader.cs" />
     <Compile Include="Sources\Data\Networking\SocketManager.cs" />
@@ -101,6 +120,18 @@
     <Compile Include="Sources\Data\Utils\XmlSerializer.cs" />
     <Compile Include="Sources\Model\PlaylistInfo.cs" />
     <Compile Include="Sources\Model\VideoInfo.cs" />
+    <Compile Include="Sources\View\Forms\AddPlaylistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\View\Forms\AddPlaylistForm.Designer.cs">
+      <DependentUpon>AddPlaylistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\View\Forms\DeleteFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\View\Forms\DeleteFolderForm.Designer.cs">
+      <DependentUpon>DeleteFolderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sources\View\Forms\DeleteVideoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +160,12 @@
     </Compile>
     <Compile Include="Sources\View\List Panels\DownloadedVideoListItemPanel.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sources\View\List Panels\PlaylistItemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sources\View\List Panels\PlaylistItemPanel.Designer.cs">
+      <DependentUpon>PlaylistItemPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Sources\View\List Panels\VideoListItemPanel.cs">
       <SubType>UserControl</SubType>
@@ -166,6 +203,12 @@
     <Compile Include="Sources\View\Forms\SearchVideoInputForm.Designer.cs">
       <DependentUpon>SearchVideoInputForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sources\View\Forms\AddPlaylistForm.resx">
+      <DependentUpon>AddPlaylistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\View\Forms\DeleteFolderForm.resx">
+      <DependentUpon>DeleteFolderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sources\View\Forms\DeleteVideoForm.resx">
       <DependentUpon>DeleteVideoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sources\View\Forms\VideoPlayerForm.resx">
       <DependentUpon>VideoPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\View\List Panels\DownloadedVideoListItemPanel.resx">
+      <DependentUpon>DownloadedVideoListItemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\View\List Panels\PlaylistItemPanel.resx">
+      <DependentUpon>PlaylistItemPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sources\View\List Panels\VideoListItemPanel.resx">
       <DependentUpon>VideoListItemPanel.cs</DependentUpon>
@@ -216,6 +265,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Retrieve-net-II_TemporaryKey.pfx" />
     <None Include="R\Configurations\Retrieve.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Retrieve.Designer.cs</LastGenOutput>
@@ -293,6 +343,11 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_trash_bin_1370026.png" />
+    <None Include="Resources\if_icon-81-document-add_314445.png" />
+    <Content Include="retrieve_icon_Dx4_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

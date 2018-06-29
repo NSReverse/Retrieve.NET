@@ -116,16 +116,23 @@ namespace Retrieve_net_II.Sources.View.Forms
 
         private void downloadButton_Click(object sender, EventArgs e)
         {
-            SocketManager manager = SocketManager.GetInstance();
-            manager.SetDelegate(this);
-            manager.SubmitYouTubeURL(currentResult.youtubeURL);
+            if (ApplicationUtils.CheckLibrary())
+            {
+                SocketManager manager = SocketManager.GetInstance();
+                manager.SetDelegate(this);
+                manager.SubmitYouTubeURL(currentResult.youtubeURL);
 
-            downloadButton.Enabled = false;
+                downloadButton.Enabled = false;
 
-            progressBar.Visible = true;
-            progressLabel.Visible = true;
+                progressBar.Visible = true;
+                progressLabel.Visible = true;
 
-            progressLabel.Text = Strings.resolvingUrl;
+                progressLabel.Text = Strings.resolvingUrl;
+            }
+            else
+            {
+                QuickAlert.ShowError("Error", "Library path is invalid. Please create a folder or point to an existing library in settings.");
+            }
         }
 
         private void streamButton_Click(object sender, EventArgs e)

@@ -14,6 +14,9 @@ namespace Retrieve_net_II.Sources.View.List_Panels
         public VideoListItemPanel()
         {
             InitializeComponent();
+
+            addPlaylistPictureBox.Visible = false;
+            deletePictureBox.Visible = false;
         }
 
         public void SetSearchResult(VideoInfo newResult)
@@ -25,7 +28,7 @@ namespace Retrieve_net_II.Sources.View.List_Panels
                 thumbnailPictureBox.Image = currentResult.thumbnailImage;
                 titleLabel.Text = currentResult.title;
                 authorLabel.Text = currentResult.author;
-                idLabel.Text = currentResult.youtubeID;
+                idLabel.Text = "YouTube ID: " + currentResult.youtubeID;
             }
         }
 
@@ -43,6 +46,16 @@ namespace Retrieve_net_II.Sources.View.List_Panels
                 optionsForm.SetDownloadCompletionContext(context);
                 optionsForm.ShowDialog();
             }
+        }
+
+        protected virtual void addPlaylistPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void deletePictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

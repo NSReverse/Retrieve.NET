@@ -32,8 +32,12 @@
             this.idLabel = new System.Windows.Forms.Label();
             this.authorLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.addPlaylistPictureBox = new System.Windows.Forms.PictureBox();
+            this.deletePictureBox = new System.Windows.Forms.PictureBox();
             this.thumbnailPictureBox = new System.Windows.Forms.PictureBox();
             this.videoResultPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.addPlaylistPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thumbnailPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,6 +47,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.videoResultPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.videoResultPanel.Controls.Add(this.addPlaylistPictureBox);
+            this.videoResultPanel.Controls.Add(this.deletePictureBox);
             this.videoResultPanel.Controls.Add(this.idLabel);
             this.videoResultPanel.Controls.Add(this.authorLabel);
             this.videoResultPanel.Controls.Add(this.titleLabel);
@@ -87,6 +93,30 @@
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "label1";
             // 
+            // addPlaylistPictureBox
+            // 
+            this.addPlaylistPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addPlaylistPictureBox.Image = global::Retrieve_net_II.Properties.Resources.if_icon_81_document_add_314445;
+            this.addPlaylistPictureBox.Location = new System.Drawing.Point(475, 64);
+            this.addPlaylistPictureBox.Name = "addPlaylistPictureBox";
+            this.addPlaylistPictureBox.Size = new System.Drawing.Size(20, 20);
+            this.addPlaylistPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.addPlaylistPictureBox.TabIndex = 9;
+            this.addPlaylistPictureBox.TabStop = false;
+            this.addPlaylistPictureBox.Click += new System.EventHandler(this.addPlaylistPictureBox_Click);
+            // 
+            // deletePictureBox
+            // 
+            this.deletePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.deletePictureBox.Image = global::Retrieve_net_II.Properties.Resources.if_trash_bin_1370026;
+            this.deletePictureBox.Location = new System.Drawing.Point(501, 64);
+            this.deletePictureBox.Name = "deletePictureBox";
+            this.deletePictureBox.Size = new System.Drawing.Size(20, 20);
+            this.deletePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.deletePictureBox.TabIndex = 8;
+            this.deletePictureBox.TabStop = false;
+            this.deletePictureBox.Click += new System.EventHandler(this.deletePictureBox_Click);
+            // 
             // thumbnailPictureBox
             // 
             this.thumbnailPictureBox.Location = new System.Drawing.Point(8, 7);
@@ -106,6 +136,8 @@
             this.Size = new System.Drawing.Size(550, 109);
             this.videoResultPanel.ResumeLayout(false);
             this.videoResultPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.addPlaylistPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deletePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thumbnailPictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -118,5 +150,7 @@
         private System.Windows.Forms.Label authorLabel;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.PictureBox thumbnailPictureBox;
+        protected System.Windows.Forms.PictureBox addPlaylistPictureBox;
+        protected System.Windows.Forms.PictureBox deletePictureBox;
     }
 }
